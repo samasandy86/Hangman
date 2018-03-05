@@ -2,6 +2,7 @@
 
 const wordList = ["cat", "dog", "bird", "hello"];
 const clue = ["meow", "woof", "chirp"];
+const maxTries = 6;
 
 let chosenWord = wordList[Math.floor((Math.random() * wordList.length))];
 
