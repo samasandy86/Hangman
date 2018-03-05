@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="container">
+        <img id="title-image" src="assets/images/slimeman-title.png" alt="SlimeMan Title Image" />
+        <div class="row">
+            <div class="col-md-6 status-column">
+                <img id="youwin-image" src="assets/images/you-win.png" alt="Winning Image" />
+                <img id="gameover-image" src="assets/images/gameover.png" alt="Game Over Image" />
+                <h2 id="tryAgainButton">Press Any Key to Try Again!</h2>
+                <img id="slimeMan" src="" alt="" />
+            </div>
+            <div class="col-md-6 status-column">
+                <h2>Press Any Key to Get Started!</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Wins</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Losses</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="totalWins"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="totalLosses"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Current Word</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="currentWord"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Guesses Remaining</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="remainingGuesses"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Letters Guessed</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="guessedLetters"></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
